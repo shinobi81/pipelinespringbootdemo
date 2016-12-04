@@ -52,7 +52,7 @@
                 <version>0.4.11</version>
                 <configuration>
                     <imageName>${docker.image.prefix}/${project.artifactId}</imageName>
-                    <baseImage>java:openjdk-8-jdk-alpine</baseImage>
+                    <baseImage>frolvlad/alpine-oraclejdk8:slim</baseImage>
                     <entryPoint>["java","-jar","/${project.build.finalName}.jar"]</entryPoint>
                     <serverId>docker-hub</serverId>
                     <resources>
